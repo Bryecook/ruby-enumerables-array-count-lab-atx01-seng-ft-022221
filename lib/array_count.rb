@@ -16,9 +16,11 @@ def count_empty_strings(array)
   index=0 
   count=0
   while index < array.count do 
-    if array[index]=""
+    if array[index].class==String
+      if array[index]=""
       count+=1
     end
+  end
     index+=1
 end
 count
